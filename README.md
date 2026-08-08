@@ -2,7 +2,7 @@
   <img src="images/banner.png" alt="TaxiAssist Banner" width="800"/>
   
   # 🚖 B-Zone TaxiAssist v3.0
-  **Cel mai complex sistem de operare pentru facțiunile Taxi (LS/LV/SF) de pe B-Zone RPG.**
+  **Cel mai complex script pentru facțiunile Taxi (LS/LV/SF) de pe B-Zone RPG.**
   
   [![Lua](https://img.shields.io/badge/Lua-Moonloader-blue.svg)](https://www.blast.hk/moonloader/)
   [![B-Zone](https://img.shields.io/badge/B--Zone-RPG-orange.svg)](https://b-zone.ro)
@@ -11,7 +11,7 @@
 
 ---
 
-**TaxiAssist** este un mod complex (scris în Lua pentru Moonloader) dedicat membrilor facțiunilor Taxi de pe comunitatea B-Zone RPG. Scopul acestui mod este să automatizeze sarcinile repetitive, să modernizeze interfața jocului cu elemente ImGui fluide și să te ajute să fii cel mai eficient și rapid taximetrist de pe server.
+**TaxiAssist** este un mod complex (transcris în Lua de la vechiul TaxiHelper scris in CLEO) dedicat membrilor facțiunilor Taxi de pe comunitatea B-Zone RPG. Scopul acestui mod este să automatizeze sarcinile repetitive, să modernizeze interfața jocului cu elemente ImGui fluide și să te ajute să fii cel mai eficient și rapid taximetrist de pe server.
 
 ---
 
