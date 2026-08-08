@@ -69,7 +69,7 @@ Modernizează-ți complet interfața de condus cu elemente ImGui. Aceste element
 </div>
 
 * **Speedometer Minimalist**: Îți arată Viteza (KM/H), Viața mașinii (%) și nivelul de Benzină. Arată excelent și nu încurcă vederea.
-* **Fare HUD**: Se activează automat când urcă un client. Monitorizezi pe ecran:
+* **Fare HUD**: Se activează automat când ai fare activ, odată cu speedometer (dacă le-ai activat din setările modului). Ce este afișat (la fel ca textdraw-ul vechi):
   * Numele companiei tale (Personalizat LS/LV/SF)
   * Distanța cursei în timp real
   * Tariful curent aplicat
