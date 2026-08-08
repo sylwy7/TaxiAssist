@@ -60,7 +60,7 @@ Fii primul care ajunge la client cu sistemul **Live Requests** afișat permanent
 
 ---
 
-## 🏎️ 4. Fare HUD & Speedometer Custom
+## 🏎️ 4. Fare HUD, Speedometer & Notificări
 
 Modernizează-ți complet interfața de condus cu elemente ImGui. Aceste elemente pot fi **dezactivate sau activate oricând** din meniul TaxiAssist.
 
@@ -75,9 +75,35 @@ Modernizează-ți complet interfața de condus cu elemente ImGui. Aceste element
   * Tariful curent aplicat
   * Câștigul exact din acea cursă
 
+<div align="center">
+  <img src="images/notifications.png" alt="Notificari Pop-up" width="300"/>
+</div>
+
+* **Notificări Pop-up Animate**: Acestea apar discret în colțul din dreapta-jos al ecranului (similar notificărilor Windows) însoțite de un sunet, informându-te despre diverse evenimente:
+  * Când ți se setează un GPS automat
+  * Când salvezi cu succes niște setări
+  * Alerte referitoare la starea mașinii sau acțiuni executate cu succes
+
 ---
 
-## ⌨️ 5. Zeci de Scurtături și Comenzi (Shortcuts)
+## ⌨️ 5. Keybinds (Taste Rapide pe Ecran)
+
+Când ești la volan, nu ai timp să scrii comenzi lungi. Modul îți pune la dispoziție taste rapide care sunt afișate discret pe ecran pentru a nu le uita niciodată.
+
+<div align="center">
+  <img src="images/keybinds.png" alt="Keybinds pe ecran" width="300"/>
+</div>
+
+* **Unde le vezi**: Pe partea dreaptă a ecranului (sub radar/HUD) vei avea o listă transparentă "TAXI ASSIST KEYS" cu scurtăturile tale curente (ex: `Open GPS Menu [K]`, `Live Selector [L]`).
+* **De unde se activează/schimbă**: Din **Meniul de Configurare (Butonul TAXI) -> Tab-ul "Taste"**. Aici poți asocia orice tastă dorești pentru:
+  * Acceptarea rapidă a comenzii de Taxi (echivalent `/accept taxi [ID]`)
+  * Acceptarea serviciului de Medic/Mecanic
+  * Comanda rapidă de Repair (`/repair`)
+  * Deschiderea meniului GPS
+
+---
+
+## 💬 6. Zeci de Scurtături și Comenzi (Shortcuts)
 
 Pe lângă interfețe, ai cel mai complet set de comenzi scurte, concepute pentru aglomerația din trafic:
 
@@ -101,7 +127,7 @@ Modul îți scurtează tastarea pentru 90% din acțiunile necesare:
 | `/ej [ID]` | `/eject [ID]` |
 | `/cch` | Curăță chat-ul (Clear Chat) doar pe ecranul tău, ca să scapi de spam |
 
-### Comunicarea cu clienții și colegii
+### Mesaje Rapide Pentru Clienți
 | Tu scrii | Mesaj trimis automat pe chat |
 |----------|------------------------------|
 | `/iau` | *(Pe chatul facțiunii /tx)*: "Preluat!" |
@@ -113,7 +139,7 @@ Modul îți scurtează tastarea pentru 90% din acțiunile necesare:
 
 ---
 
-## 📦 Instalare
+## 📦 7. Instalare
 
 1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
 2. Ai nevoie de librăriile Moonloader standard (`mimgui`, `ffi`, `encoding`, `samp.events`, `vkeys`).
@@ -123,10 +149,8 @@ Modul îți scurtează tastarea pentru 90% din acțiunile necesare:
 
 ---
 
-## 👨‍💻 Credite & Autori
-Acest mod a fost inițial construit ca un script CLEO (creat de *TheTom*, continuat de *florynn_fly*). A fost preluat, complet rescris de la zero și adus la standardele actuale folosind **LUA și ImGui** de către:
+## 👨‍💻 8. Credite & Autori
+Acest mod a fost inițial construit ca un script CLEO (creat de *TheTom*, continuat de *florynn_fly*). A fost preluat, complet rescris de la zero și adus la standardele actuale folosind **LUA și ImGui** de:
 * 🏆 **SyLvy** 
 * 🏆 **Gemini & Claude** (AI Assistance pentru algoritmi și design UI)
 * 🏆 **Antigravity** (Optimizări și rescriere a arhitecturii meniurilor)
-
-Dacă vă place și vă ajută, lăsați un ⭐ **Star** pe GitHub!
