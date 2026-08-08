@@ -16,116 +16,164 @@
 ---
 
 ## 🎨 1. Interfețe Moderne și HUD-uri (ImGui)
-Modul înlocuiește vechile texte de pe ecran cu interfețe moderne, fluide și complet personalizabile, construite cu biblioteca ImGui.
+Modul înlocuiește vechile texte de pe ecran cu interfețe moderne, fluide și complet personalizabile, construite cu biblioteca ImGui. Nu mai trebuie să ghicești date – totul este la un click distanță!
 
 <div align="center">
-  <img src="images/main_menu.png" alt="Meniul Principal" width="600"/>
-  <p><i>Meniul Principal (/tcmd) - Dark Mode & UI Modern</i></p>
+  <img src="images/main_menu.png" alt="Meniul Principal" width="700"/>
+  <p><i>Meniul Principal (/tcmd) - Controlul central al modului</i></p>
 </div>
 
-* **Meniul Principal (`/tcmd`)**: Centrul de comandă al modului. De aici accesezi setările, panoul de GPS și locațiile adăugate manual.
-* **Speedometer Custom**: Un vitezometru elegant și minimalist integrat pe ecran.
-* **Fare HUD (Panou de Informații)**: Un overlay permanent pe ecran atunci când ai client, care îți afișează în timp real:
+* **Meniul Principal (`/tcmd`)**: Centrul de comandă al modului. De aici accesezi setările, panoul de GPS, aliasele și toate configurațiile necesare.
+* **Speedometer Custom**: Un vitezometru elegant și minimalist integrat pe ecran. Poți să-l activezi/dezactivezi direct din setări.
+
+<div align="center">
+  <img src="images/speedometer.png" alt="Speedometer" width="400"/>
+  <p><i>Speedometer Custom</i></p>
+</div>
+
+* **Fare HUD (Panou de Informații)**: Un overlay permanent pe ecran atunci când ai client, care îți afișează în timp real datele cursei:
   * 💵 Banii încasați din cursa curentă
   * 📍 Distanța parcursă (în Km)
-  * 🏢 Numele facțiunii tale (LS/LV/SF Taxi)
+  * 🏢 Numele facțiunii tale (Personalizat în funcție de oraș)
   * ⛽ Benzina și 🔧 Viața mașinii
-* **Pop-up Notifications**: Notificări animate (cu fade-in/fade-out și sunete) direct pe ecran atunci când setezi un GPS sau salvezi o setare.
 
 <div align="center">
   <img src="images/fare_hud.png" alt="Fare HUD Screenshot" width="400"/>
+  <p><i>Panoul activ în timpul unei curse (Fare HUD)</i></p>
+</div>
+
+* **Pop-up Notifications**: Când setezi un GPS, când îl ștergi, sau când salvezi o setare, un mesaj frumos animat va apărea discret în colțul ecranului.
+
+<div align="center">
+  <img src="images/notifications.png" alt="Notificari Pop-up" width="300"/>
+  <p><i>Sistemul de Notificări Pop-up animate</i></p>
 </div>
 
 ---
 
 ## ⚙️ 2. Automatizări și Funcții Inteligente (Auto-Everything)
-Lasă modul să tasteze pentru tine! 
+Am construit acest mod să tasteze în locul tău. Te scapă de greșelile umane care duc la Faction Warns (FW).
 
 <div align="center">
-  <img src="images/settings.png" alt="Meniul de Setari" width="600"/>
+  <img src="images/settings_tab.png" alt="Tab-ul de Setari" width="700"/>
+  <p><i>Tab-ul de Setări - Activează/Dezactivează automatizările</i></p>
 </div>
 
-* **Auto-Greeting (Zi/Noapte)**: Modul știe automat cât e ceasul în joc și salută clientul specific momentului zilei (*"Bună ziua"* sau *"Bună seara"*).
-* **Auto-Fare (Preț Inteligent)**: Setează automat prețul corect: `/fare 30` în intervalul de zi (08:00 - 20:00) și `/fare 50` în intervalul de noapte. Zero greșeli, zero Faction Warns.
-* **Auto-Goodbye**: Odată ce clientul coboară, modul îi trimite automat un mesaj de mulțumire personalizabil.
-* **Auto-SMS**: Trimitere automată de SMS ("Vin imediat spre tine!") atunci când accepți o comandă (`/accept taxi`).
-* **Smart Auto-GPS**: Sistem unic care scanează chat-ul. Dacă un coleg scrie "Locație: Banca LS", modul va pune instant checkpoint pe harta ta fără să fie nevoie să tastezi ceva.
-* **Auto-FVR (Sistem pentru Rank 5+)**: Lansare `/fvr` cu numărătoare inversă automată pe chatul facțiunii (`10.. 9.. 8.. FVR!`).
+* **Auto-Greeting (Zi/Noapte)**: Modul citește ora serverului. Când un jucător urcă, modul îl salută instant cu *"Bună ziua!"* sau *"Bună seara!"*, în funcție de caz.
+* **Auto-Fare (Preț Inteligent)**: La urcarea clientului, setează automat prețul legal: `/fare 30` în intervalul de zi (08:00 - 20:00) și `/fare 50` în intervalul de noapte.
+* **Auto-Goodbye**: Odată ce clientul coboară, modul îi trimite automat un mesaj politicos de despărțire.
+* **Auto-SMS**: Trimitere automată de SMS ("Vin imediat spre tine!") atunci când dai `/accept taxi`.
+* **Smart Auto-GPS**: Sistem unic! Dacă un coleg scrie pe chat-ul companiei `/tx Locație: Banca LS`, modul citește chat-ul și plasează **instant** checkpoint-ul pe harta ta, fără ca tu să scrii nimic.
+* **Auto-FVR (Pentru Rank 5+)**: Lansare `/fvr` cu numărătoare inversă automată pe chatul facțiunii (`10.. 9.. 8.. FVR!`).
 
 ---
 
 ## 🗺️ 3. Sistem GPS Avansat și Căutare Rapidă
-Cel mai complet GPS integrat direct într-un mod de SA-MP.
+Cel mai complet GPS integrat direct într-un mod de SA-MP. Gata cu rătăcitul pe hartă!
 
 <div align="center">
-  <img src="images/gps_menu.png" alt="GPS Menu" width="600"/>
+  <img src="images/gps_tab.png" alt="Tab-ul GPS" width="700"/>
+  <p><i>Sistemul de GPS Avansat</i></p>
 </div>
 
-* **Categorii de Locații**:
-  * 👥 Factions (HQ-uri)
-  * 💼 Jobs
-  * 🏢 Important (CNN, Bănci, Primărie, PNS-uri)
-  * 🏷️ Custom (Adăugate de tine)
-* **Bară de Căutare (Live Search)**: Scrii ce cauți, iar locațiile se filtrează instant (ex: scrii "CNN" și apar direct cele 3 CNN-uri).
-* **Adăugare Locații Personalizate (Custom Locations)**: Poți salva, edita sau șterge propriile tale puncte de interes pe hartă direct din joc.
+* **Categorii de Locații Sortate Vizual**:
+  * 👥 Factions (HQ-uri) - *Roșu*
+  * 💼 Jobs - *Verde*
+  * 🏢 Important (CNN, Bănci, Primărie, PNS-uri) - *Albastru*
+  * 🏷️ Custom (Adăugate de tine) - *Auriu*
+
+* **Bară de Căutare (Live Search)**: Scrii ce cauți, iar locațiile se filtrează în timp real. (Ex: scrii "CNN" și ai direct pe ecran toate cele 3 locații).
+
+<div align="center">
+  <img src="images/gps_custom.png" alt="Adaugare Custom GPS" width="500"/>
+  <p><i>Fereastra de Adăugare/Editare a punctelor Custom GPS</i></p>
+</div>
+
+* **Adăugare Locații Personalizate**: Ai un loc ascuns preferat sau casa unui prieten? Adaugă-l direct din joc, modului îi va fi salvat permanent.
 
 ---
 
-## 📱 4. Modulul Live Taxi Requests & Remote Control
-Sisteme care te pun cu un pas în fața celorlalți colegi.
+## 📱 4. Modulul Live Taxi Requests
+Fii primul care preia comenzile. 
 
 <div align="center">
   <img src="images/live_requests.png" alt="Live Requests Panel" width="400"/>
+  <p><i>Panoul cu comenzi live</i></p>
 </div>
 
-* **Panoul Live Requests (`/clearlive`)**: O listă pe ecran cu toți jucătorii care au cerut un taxi, arătând *numele*, *ID-ul*, și *distanța exactă* de la tine până la ei. Nu mai trebuie să scrii `/servicecalls` încontinuu!
-* **Control de la distanță (External Database)**: Opțional, folosind comanda `/tacontrol` pe un cont, poți trimite comenzi silențioase (via Bază de Date KV externă) către alt cont care rulează modul. Acesta va executa comanda în joc automat. Sistem perfect pentru jucătorii care folosesc 2 conturi!
+* **Live Requests (`/clearlive`)**: O listă afișată pe ecran cu toți jucătorii care au cerut un taxi, incluzând *numele*, *ID-ul*, și *distanța exactă* (în metri/km) de la tine până la ei.
+* **Fără Spam de `/servicecalls`**: Monitorizezi pasiv piața, vezi imediat cine a dat apel și la ce distanță se află!
 
 ---
 
-## 📖 5. Regulamentul B-Zone în Joc (`/brules`)
-Ai uitat dacă poți pune NOS pe mașina facțiunii? Nu mai e nevoie să intri pe forum (Alt-Tab)!
+## 📖 5. Regulamentul B-Zone Integrat (`/brules`)
+Ai uitat dacă poți pune NOS pe mașina facțiunii? Nu e nevoie să faci Alt-Tab!
 
 <div align="center">
-  <img src="images/brules.png" alt="B-Zone Rules" width="600"/>
+  <img src="images/brules.png" alt="B-Zone Rules" width="700"/>
+  <p><i>Regulamentul complet B-Zone, direct în joc</i></p>
 </div>
 
-* Regulamentul complet integrat direct într-un meniu ImGui scrollabil.
-* **Sistem de Căutare Instant**: Caută "nos" sau "eject" și modul va evidenția automat paragraful respectiv!
+* Regulamentul complet integrat într-un meniu ImGui foarte fluid și organizat pe capitole.
+* **Sistem de Căutare Instant**: Scrii "nos" sau "eject" și modul evidențiază automat paragrafele care conțin acele reguli. Te salvează din orice discuție contradictorie!
 
 ---
 
-## ⌨️ 6. BIND-uri și Zeci de Comenzi Scurte
-Scurtăturile care îți salvează viața (și timpul) în aglomerație:
+## 🏷️ 6. Sistemul de Alias (Nume -> ID)
+Ai prieteni sau jucători cu care interacționezi des și nu vrei să le tot cauți ID-ul pe TAB?
+
+<div align="center">
+  <img src="images/alias_tab.png" alt="Tab-ul de Aliases" width="700"/>
+  <p><i>Interfața pentru gestionarea Alias-urilor</i></p>
+</div>
+
+* Comanda `/alias` sau secțiunea din meniul principal îți permite să asociezi un Nume cu un ID (ex: Mapezi "Gigel" la ID-ul 15).
+* Când folosești comenzi pe server (ex: `/w Gigel salut`), modul va trimite automat la ID-ul corect!
+
+---
+
+## 🎨 7. Selector de Facțiune (Personalizare Temă)
+Ești în LS Taxi, dar mâine aplici la LV Taxi? Nicio problemă.
+
+<div align="center">
+  <img src="images/faction_select.png" alt="Selectie Fatiune" width="400"/>
+  <p><i>Meniul de Selecție a Facțiunii (/selectfaction)</i></p>
+</div>
+
+* Folosind comanda `/selectfaction`, poți schimba tematica de text și HUD-urile să afișeze corect numele și culorile facțiunii tale curente (LS, LV sau SF Taxi).
+
+---
+
+## ⌨️ 8. BIND-uri și Zeci de Comenzi Scurte
+Scurtăturile care îți salvează timpul în aglomerație:
 
 ### Comenzile Principale de Bază
 | Comandă | Descriere |
 |---------|-----------|
-| `/tcmd` sau `/taxiassist` | Deschide Meniul Principal (GPS, Setări, Categorii) |
-| `/txc` | Deschide lista cu toate scurtăturile din mod |
+| `/tcmd` / `/taxiassist` | Deschide Meniul Principal (GPS, Setări, Categorii) |
+| `/txc` | Deschide meniul cu lista tuturor comenzilor (Help Menu) |
 | `/brules` | Deschide Regulamentul Facțiunii (B-Zone) |
-| `/selectfaction` | Schimbă tema de culori a HUD-ului (LS/LV/SF Taxi) |
-| `/alias` | Asociază un Nume cu un ID (ex: `/alias Gigel 10`) |
-| `/tacontrol` | Meniul de control extern pentru conturi secundare |
+| `/selectfaction` | Schimbă culorile și numele (LS/LV/SF Taxi) |
+| `/alias` | Meniul rapid de asociere Nume-ID |
 
 ### Scurtături Utile (Tastate)
-| Comandă scurtă | Acțiune (Comanda reală) |
-|----------------|-------------------------|
+| Comandă scurtă | Acțiune (Comanda reală pe care o scrie modul) |
+|----------------|----------------------------------------------|
 | `/sc` | `/servicecalls` |
 | `/rep` | `/repair` (Trece automat pe jobul mecanic) |
 | `/ref` | `/refill` |
 | `/ra` | `/raport` |
 | `/ej [ID]` | `/eject [ID]` |
-| `/cch` | Curăță chat-ul de spam (Clear Chat) |
+| `/cch` | Curăță chat-ul de spam (Clear Chat local) |
 | `/dd` sau `/kcp` | `/cancel find` + `/killcp` instantaneu |
 | `/casa [ID]` | Pune Checkpoint la ID-ul Casei respective |
 | `/biz [ID]` | Pune Checkpoint la ID-ul Biz-ului respectiv |
 | `/clanhq [ID]` | Pune Checkpoint la HQ-ul Clanului respectiv |
 
 ### Mesaje Rapide Pentru Clienți
-| Comandă scurtă | Mesaj trimis pe chat |
-|----------------|----------------------|
-| `/iau` | (Pe chatul /tx): *Preluat!* |
+| Comandă scurtă | Mesaj trimis automat pe chat |
+|----------------|------------------------------|
+| `/iau` | (Pe chatul `/tx`): *Preluat!* |
 | `/radio` | *Dorești un post de radio anume? Daca da, care?* |
 | `/refuz` | *Te rog sa dai /cancel taxi, am alta comanda.* |
 | `/reper` | *Imi poti da un reper mai exact, te rog?* |
@@ -133,28 +181,27 @@ Scurtăturile care îți salvează viața (și timpul) în aglomerație:
 | `/aj` | *Am ajuns la destinatia dorita.* |
 
 ### Tasta-Binduri Integrate
-* **Tasta 3**: Acceptă comanda curentă (echivalent `/accept taxi [ID]`)
+* **Tasta 3**: Acceptă comanda curentă de taxi foarte rapid (echivalent `/accept taxi [ID]`)
 * **Tasta 5**: Oferă `/repair` rapid
-* **Tasta L**: Acceptă serviciu de Medic/Mecanic
+* **Tasta L**: Acceptă serviciul de Medic/Mecanic
 
 ---
 
 ## 📦 Instalare
 
-1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader** în folderul jocului.
-2. Ai nevoie de librăriile Moonloader standard (`mimgui`, `ffi`, `encoding`, `samp.events`, `requests`).
-3. Descarcă codul sursă de pe GitHub.
-4. Adaugă fișierul `TaxiAssist.lua` în folderul `moonloader` din GTA San Andreas.
-5. *(Opțional)* Dacă folosești funcția de comunicare între calculatoare diferite, pune și `TaxiAssistCONTROL.lua`.
-6. Intră pe server și tastează `/tcmd`!
+1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
+2. Descarcă librăriile Moonloader necesare (`mimgui`, `ffi`, `encoding`, `samp.events`, `vkeys`).
+3. Descarcă codul sursă sau ultima versiune de pe acest GitHub (din secțiunea Releases).
+4. Adaugă fișierul `TaxiAssist.lua` în folderul `moonloader` din directorul GTA San Andreas.
+5. Intră pe server și tastează `/tcmd`!
 
 ---
 
 ## 👨‍💻 Credite & Autori
 Proiectul a pornit inițial ca un script CLEO de bază (creat de *TheTom* și continuat de *florynn_fly*). 
-A fost rescris complet, tradus și transformat radical într-un sistem modern **LUA / ImGui** de către:
+A fost rescris de la zero, tradus și transformat radical într-un sistem modern **LUA / ImGui** de către:
 * 🏆 **SyLvy** 
-* 🏆 **Gemini & Claude** (AI Assistance)
-* 🏆 **Antigravity** (Sisteme externe, baze de date, structură)
+* 🏆 **Gemini & Claude** (AI Assistance pentru UI, structură și algoritmi complecși)
+* 🏆 **Antigravity** (Optimizări, ImGui, și funcții avansate)
 
-Dacă vă place modul, nu uitați să lăsați un ⭐ Star pe GitHub!
+Dacă vă place modul și vă face viața de taximetrist mai ușoară, nu uitați să lăsați un ⭐ **Star** pe GitHub!
