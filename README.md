@@ -139,18 +139,24 @@ Modul îți scurtează tastarea pentru 90% din acțiunile necesare:
 
 ---
 
-## 📦 7. Instalare
+## 🤫 7. ...Și Multe Altele de Descoperit
 
-1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
-2. Ai nevoie de librăriile Moonloader standard (`mimgui`, `ffi`, `encoding`, `samp.events`, `vkeys`).
-3. Descarcă codul sursă sau ultima versiune de pe acest GitHub (din secțiunea Releases).
-4. Adaugă fișierul `TaxiAssist.lua` în folderul `moonloader` din directorul GTA San Andreas.
-5. Intră pe server și tastează `/txc`!
+Lista de mai sus acoperă doar ce e mai esențial. Modul este complet cu zeci de funcții mici menite să te ajute la raport, sisteme de detectare și mici detalii pe care te lăsăm să le descoperi singur. Aștept totuși sugestii dacă mai aveți idei ce să mai bag în mod pe discord: sylwy (am stat să mă gândesc cu ce pot face mai bun modul față de varianta cleo și am reușit :x, dar totuși cred că mai lipsește ceva).
 
 ---
 
-## 👨‍💻 8. Credite & Autori
-Acest mod a fost inițial construit ca un script CLEO (creat de *TheTom*, continuat de *florynn_fly*). A fost preluat, complet rescris de la zero și adus la standardele actuale folosind **LUA și ImGui** de:
-* 🏆 **SyLvy** 
-* 🏆 **Gemini & Claude** (AI Assistance pentru algoritmi și design UI)
-* 🏆 **Antigravity** (Optimizări și rescriere a arhitecturii meniurilor)
+## 📦 8. Instalare
+
+1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
+2. Descarcă modul cu tot cu librăriile necesare și moonloader de [aici](https://drive.google.com/file/d/1fqqceeMieJwpnf5UvxLjDWqbYLpEqNCC/view?usp=drive_link)
+3. Extrage tot în folderul principal al jocului (acolo unde se află și **gta_sa.exe**). 
+4. Intră pe server și scrie comanda **/start** pentru a începe configurarea modului.
+
+---
+
+## 👨‍💻 9. Credits
+Modul ăsta a fost transcris de la vechiul Taxi Helper care a fost scriptat în CLEO de **TheTom** și **florynn_fly**, iar cu ajutorul Gemini & Claude am reușit să fac acest mod ajutător posibil.
+
+## 🎮 10. Enjoy!
+
+Dacă vă place și vă ajută, lăsați un ⭐ **Star** pe GitHub!
