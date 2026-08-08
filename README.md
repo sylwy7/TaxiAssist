@@ -20,10 +20,10 @@ Modul înlocuiește vechile texte de pe ecran cu interfețe moderne, fluide și 
 
 <div align="center">
   <img src="images/main_menu.png" alt="Meniul Principal" width="700"/>
-  <p><i>Meniul Principal (/tcmd) - Controlul central al modului</i></p>
+  <p><i>Meniul Principal (/txc) - Controlul central al modului</i></p>
 </div>
 
-* **Meniul Principal (`/tcmd`)**: Centrul de comandă al modului. De aici accesezi setările, panoul de GPS, aliasele și toate configurațiile necesare.
+* **Meniul Principal (`/txc`)**: Centrul de comandă al modului. De aici accesezi setările, panoul de GPS, aliasele și toate configurațiile necesare.
 * **Speedometer Custom**: Un vitezometru elegant și minimalist integrat pe ecran. Poți să-l activezi/dezactivezi direct din setări.
 
 <div align="center">
@@ -150,8 +150,8 @@ Scurtăturile care îți salvează timpul în aglomerație:
 ### Comenzile Principale de Bază
 | Comandă | Descriere |
 |---------|-----------|
-| `/tcmd` / `/taxiassist` | Deschide Meniul Principal (GPS, Setări, Categorii) |
-| `/txc` | Deschide meniul cu lista tuturor comenzilor (Help Menu) |
+| `/txc` / `/taxiassist` | Deschide Meniul Principal (GPS, Setări, Categorii) |
+| `/tcmd` | Deschide meniul cu lista tuturor comenzilor (Help Menu) |
 | `/brules` | Deschide Regulamentul Facțiunii (B-Zone) |
 | `/selectfaction` | Schimbă culorile și numele (LS/LV/SF Taxi) |
 | `/alias` | Meniul rapid de asociere Nume-ID |
