@@ -148,7 +148,7 @@ Lista de mai sus acoperă doar ce e mai esențial. Modul este complet cu zeci de
 ## 📦 8. Instalare
 
 1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
-2. Descarcă modul cu tot cu librăriile necesare și moonloader de [aici](https://drive.google.com/file/d/1fqqceeMieJwpnf5UvxLjDWqbYLpEqNCC/view?usp=drive_link)
+2. Descarcă modul cu tot cu librăriile necesare și moonloader din pagina de Releases (vizibilă în partea dreaptă a paginii).
 3. Extrage tot în folderul principal al jocului (acolo unde se află și **gta_sa.exe**). 
 4. Intră pe server și scrie comanda **/start** pentru a începe configurarea modului.
 
