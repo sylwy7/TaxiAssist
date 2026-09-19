@@ -1,7 +1,7 @@
 <div align="center">
   <img src="images/bannerNEW.png" alt="TaxiAssist Banner" width="800"/>
   
-  # 🚖 B-Zone TaxiAssist v4.0
+  # 🚖 B-Zone TaxiAssist v3.0
   **Cel mai complex script pentru facțiunile Taxi de pe `RPG.B-ZONE.RO`.**
   
   [![Lua](https://img.shields.io/badge/Lua-Moonloader-blue.svg)](https://www.blast.hk/moonloader/)
