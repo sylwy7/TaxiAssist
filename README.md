@@ -139,13 +139,37 @@ Modul îți scurtează tastarea pentru 90% din acțiunile necesare:
 
 ---
 
-## 🤫 7. ...Și Multe Altele de Descoperit
+### 🗺️ 7. Harta Mare Interactivă `[Tasta M]`
+* **116+ Locații Oficiale Pre-configurate**: Toate facțiunile, joburile, bizurile importante și locațiile de interes din Los Santos, Las Venturas și San Fierro.
+* **Sistem Click-to-GPS**:
+  * **Click Stânga pe o iconiță**: Calculează instant cel mai scurt traseu pe șosele și plasează destinația.
+  * **Click Dreapta oriunde pe hartă**: Pune un marker personalizat automat. Un nou click dreapta anulează traseul.
+* **Căutare & Filtrare Live**: Caută instant orice locație după nume sau ID.
+* **Personalizare Completă a Denumirilor**: Comanda `/editlocationnames` îți permite să redenumești oricare dintre cele 116+ locații sau cele 64 de tipuri de sprite-uri direct din joc.
+* **Control Mouse Fără Conflict**: Apăsarea tastei `M` deschide harta curat; un simplu Click Dreapta activează cursorul când dorești să interacționezi.
+
+---
+
+### 🧭 8. Minimapă Radar HD & Rutare GPS pe Străzi
+* **A* Road Pathfinding**: Spre deosebire de linia aeriană clasică, traseul GPS este calculat și desenat direct pe rețeaua de drumuri a jocului (peste 100.000 de noduri rutiere).
+* **Rotunjire Reală a Colțurilor (0 - 45 px)**: Randare avansată prin plasă poligonală (polygon mesh) — colțurile texturii hărții, fundalul și chenarul sunt rotunjite fluid, cu exterior complet transparent.
+* **Perspectivă Înaintată (Stil Definitive Edition / GTA V)**: Săgeata jucătorului este coborâtă spre marginea inferioară a radarului, oferind un câmp vizual de 2-3 ori mai larg în fața vehiculului.
+* **Înlocuitor 1:1 pentru Radarul GTA SA**: Opțiune dedicată pentru a ascunde radarul nativ al jocului și a-l înlocui cu radarul scriptat, fără suprapuneri sau dubluri de texturi.
+* **Filtrare Inteligentă a Iconițelor**: Păstrează radarul curat (exact ca în GTA SA clasic) — doar destinația activă și checkpoint-ul roșu rămân ancorate pe margini.
+
+---
+
+### 📍 9. Waypoint 3D în Lume & Pointer Radar
+* **Obiectiv 3D Plutitor**: Iconița destinației sau cercul roz este proiectat tridimensional în joc direct deasupra locației țintă, însoțit de distanța în metri.
+* **Pointer Adaptiv pe Marginea Ecranului**: Când camera este orientată în altă direcție, pe marginea ecranului apare un indicator direcțional care te ghidează direct spre obiectiv.
+
+## 🤫 10. ...Și Multe Altele de Descoperit
 
 Lista de mai sus acoperă doar ce e mai esențial. Modul este complet cu zeci de funcții mici menite să te ajute la raport, sisteme de detectare și mici detalii pe care te lăsăm să le descoperi singur. Aștept totuși sugestii dacă mai aveți idei ce să mai bag în mod pe discord: sylwy (am stat să mă gândesc cu ce pot face mai bun modul față de varianta cleo și am reușit :x, dar totuși cred că mai lipsește ceva).
 
 ---
 
-## 📦 8. Instalare
+## 📦 11. Instalare
 
 1. Descarcă și instalează **CLEO**, **SAMPFUNCS** și **Moonloader 0.26** în folderul jocului.
 2. Descarcă modul cu tot cu librăriile necesare și moonloader din pagina de Releases (vizibilă în partea dreaptă a paginii).
@@ -154,9 +178,9 @@ Lista de mai sus acoperă doar ce e mai esențial. Modul este complet cu zeci de
 
 ---
 
-## 👨‍💻 9. Credits
+## 👨‍💻 12. Credits
 Modul ăsta a fost transcris de la vechiul Taxi Helper care a fost scriptat în CLEO de **TheTom** și **florynn_fly**, iar cu ajutorul Gemini & Claude am reușit să fac acest mod ajutător posibil.
 
-## 🎮 10. Enjoy!
+## 🎮 13. Enjoy!
 
 Dacă vă place și vă ajută, lăsați un ⭐ **Star** pe GitHub!
